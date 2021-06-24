@@ -1,6 +1,9 @@
-  
 language: node_js
 node_js:
-  - lts/*
-script:
-  - npm run test
+  - 'node'
+ - '9'
+ deploy:
+  provider: heroku
+  app: "my-app9767878"
+  api_key:
+    secure: "a43fb88b-1033-49b5-8f30-99b08a736d87"
